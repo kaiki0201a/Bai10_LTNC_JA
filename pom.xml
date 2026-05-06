@@ -23,7 +23,7 @@
             <artifactId>logback-classic</artifactId>
             <version>1.4.14</version>   <!-- Sua 2-->
         </dependency>
-        
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -36,7 +36,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.12.4</version>
+                <version>3.1.2</version><!-- Nâng cấp từ 2.12.4 để chạy được JUnit 5 -->
             </plugin>
         </plugins>
     </build>
