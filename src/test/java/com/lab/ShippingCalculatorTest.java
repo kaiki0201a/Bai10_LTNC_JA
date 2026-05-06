@@ -1,4 +1,4 @@
-package com.lab
+package com.lab;
 
 public class ShippingCalculatorTest {
 
