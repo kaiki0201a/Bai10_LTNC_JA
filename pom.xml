@@ -11,10 +11,17 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>9.9.9</version>
+            <version>1.4.14</version> <!-- ĐÃ SỬA TẠI ĐÂY -->
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.14</version>   <!-- Sua 2-->
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
