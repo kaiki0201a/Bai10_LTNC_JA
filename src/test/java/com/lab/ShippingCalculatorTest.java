@@ -1,3 +1,5 @@
+package com.lab
+
 public class ShippingCalculatorTest {
 
     ShippingCalculator calc = new ShippingCalculator();
