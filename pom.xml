@@ -11,32 +11,35 @@
     </properties>
 
     <dependencies>
-
+        <!-- Logback - Sửa lỗi 2 (Version ảo) -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.4.14</version> <!-- ĐÃ SỬA TẠI ĐÂY -->
+            <version>1.4.14</version>
         </dependency>
 
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.4.14</version>   <!-- Sua 2-->
-        </dependency>
-
+        <!-- JUnit 5 - Cần thiết để biên dịch Test -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.9.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
             <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
+            <!-- Sửa lỗi 3 - Nâng cấp plugin để chạy được JUnit 5 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version><!-- Nâng cấp từ 2.12.4 để chạy được JUnit 5 -->
+                <version>3.1.2</version>
             </plugin>
         </plugins>
     </build>
